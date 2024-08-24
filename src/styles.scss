@@ -1,1 +1,143 @@
-/* You can add global styles to this file, and also import other style files */
+@import './fonts.scss';
+
+:root {
+    --sp-color-primary: #004AA9;
+    --sp-color-secondary: #007B3F;
+    --sp-color-sub-secondary: #05C367;
+    --sp-color-tertiary: #388FFF;
+    --sp-bg-primary: #021A39;
+    --sp-bg-secondary: linear-gradient(89.69deg, #E9F2FF -5.03%, #9BDAFF 76.48%, #76CFFF 102.97%);
+    --sp-text-primary: #000710;
+    --sp-text-secondary: #475567;
+    --sp-text-tertiary: #DFDFDF;
+    --sp-font-primary: 'Objectivity';
+    --sp-font-secondary: 'sans-serif';
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: var(--sp-font-primary), var(--sp-font-secondary) !important;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+input,
+select,
+textarea,
+blockquote,
+th,
+td,
+button,
+h6 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+// Color Customization
+
+.sp-primary {
+    color: var(--sp-color-primar) !important;
+}
+
+.sp-secondary {
+    color: var(--sp-color-secondary) !important;
+}
+
+.sp-sub-secondary {
+    color: var(--sp-color-sub-secondary) !important;
+}
+
+.sp-tertiary {
+    color: var(--sp-color-tertiary) !important;
+}
+
+.sp-text-primary {
+    color: var(--sp-text-primary) !important;
+}
+
+.sp-text-secondary {
+    color: var(--sp-text-secondary) !important;
+}
+
+.sp-text-tertiary {
+    color: var(--sp-text-tertiary) !important;
+}
+
+.sp-bg-primary {
+    background-color: var(--sp-bg-primary);
+}
+
+.sp-bg-secondary {
+    background: var(--sp-bg-secondary);
+}
+
+// Button Customization
+
+.sp-btn-primary {
+    color: #FFFFFF !important;
+    background-color: var(--sp-color-primary) !important;
+    border: 1px solid var(--sp-color-primary) !important;
+    outline: 0 !important;
+    border-radius: 8px !important;
+    padding: 8px 12px !important;
+    transition: 0.3s ease-in-out;
+    font-weight: 400 !important;
+}
+
+.sp-btn-secondary {
+    color: var(--sp-color-secondary) !important;
+    background-color: var(--sp-color-secondary) !important;
+    border: 1px solid var(--sp-color-secondary) !important;
+    outline: 0 !important;
+    border-radius: 8px !important;
+    padding: 8px 12px !important;
+    transition: 0.3s ease-in-out;
+    font-weight: 500 !important;
+}
+
+.sp-btn-large {
+    padding: 12px 16px !important;
+    border-radius: 12px !important;
+}
+
+// Font Customization
+
+.ff-primary {
+    font-family: var(--primary-font);
+}
+
+.fw-semi {
+    font-weight: 500;
+}
+
+.fw-medium {
+    font-weight: 600;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
