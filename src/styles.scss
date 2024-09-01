@@ -7,7 +7,7 @@
     --sp-color-tertiary: #388FFF;
     --sp-bg-primary: #021A39;
     --sp-bg-secondary: linear-gradient(89.69deg, #E9F2FF -5.03%, #9BDAFF 76.48%, #76CFFF 102.97%);
-    --sp-text-primary: #000710;
+    --sp-text-dark: #000710;
     --sp-text-secondary: #475567;
     --sp-text-tertiary: #DFDFDF;
     --sp-font-primary: 'Objectivity';
@@ -67,8 +67,8 @@ a {
     color: var(--sp-color-tertiary) !important;
 }
 
-.sp-text-primary {
-    color: var(--sp-text-primary) !important;
+.sp-text-dark {
+    color: var(--sp-text-dark) !important;
 }
 
 .sp-text-secondary {
@@ -101,9 +101,9 @@ a {
 }
 
 .sp-btn-secondary {
-    color: var(--sp-color-secondary) !important;
-    background-color: var(--sp-color-secondary) !important;
-    border: 1px solid var(--sp-color-secondary) !important;
+    color: var(--sp-text-dark) !important;
+    background: var(--sp-bg-secondary) !important;
+    border: 1px solid var(--sp-bg-secondary) !important;
     outline: 0 !important;
     border-radius: 8px !important;
     padding: 8px 12px !important;
@@ -140,4 +140,31 @@ a {
 
 .fs-18 {
     font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 18px;
+}
+
+.heading-lg {
+    font-size: 48px;
+    line-height: 56.39px;
+    font-weight: 500px !important;
+}
+
+.heading-md {
+    font-size: 40px;
+    line-height: 49px;
+}
+
+.sp-text {
+    color: #2E4562;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.sp-text-light {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 23px;
 }

@@ -1,0 +1,17 @@
+<div class="property-card">
+    <div class="property-img-sec position-relative">
+        <img class="img img-fluid w-100 property-img" [src]="'assets/img/property/' + property.image">
+        <div class="property-badge" *ngIf="property.isFeatured">Featured</div>
+    </div>
+    <div class="property-content pt-3 pb-4 px-3">
+        <h5 class="property-title">{{ property.title }}</h5>
+        <p class="property-price mb-2">{{ property.price | currency:'INR':'symbol':'1.0-0' }}</p>
+        <p class="ncp-text">{{ property.description }}</p>
+        <div class="d-flex">
+            <span class="ncp-theme-primary"><img class="img me-2" src="assets/icons/bed.svg">{{ property.bed }} Beds</span>
+            <span class="ncp-theme-primary ms-3"><img class="img me-2" src="assets/icons/tub.svg">{{ property.bathroom }} Bath</span>
+            <span class="ncp-theme-primary ms-3"><img class="img me-2" src="assets/icons/area.svg">{{ property.area }}</span>
+        </div>
+    </div>
+</div>
+
