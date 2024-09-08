@@ -1,3 +1,27 @@
 .footer-bg {
     background-color: #00060F;
+
+    .icon-img {
+        padding: 5px;
+        border: 1px solid #FFFFFF36;
+        border-radius: 50px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .icon-arrow {
+        height: 15px;
+    }
+
+    .icon-social {
+        padding: 5px;
+        border: 1px solid #FFFFFF36;
+        border-radius: 50px;
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.footer-hr {
+    border-color: #FFFFFF;
 }

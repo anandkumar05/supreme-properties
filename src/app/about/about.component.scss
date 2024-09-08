@@ -1,0 +1,108 @@
+.sec-hero {
+    height: 75vh;
+    .hero-img {
+        height: 100% !important;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .hero-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+.sec-hero::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(231.43deg, rgba(0, 0, 0, 0.0001) 51.55%, rgba(0, 0, 0, 0.837986) 100.85%);
+}
+
+// About us section 
+
+.sec-about {
+    .about-img {
+        height: 364px;
+        width: 435px;
+    }
+    .about-img img {
+        position: relative;
+        z-index: 1;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+        padding-right: 25px;
+    }
+    .about-img::before {
+        content: '';
+        width: calc(100% - 25px);
+        height: 100%;
+        position: absolute;
+        bottom: -25px;
+        right: 0px;
+        background-color: var(--sp-color-tertiary);
+        z-index: 0;
+    }
+}
+
+// Section service
+
+.sec-service {
+    background-color: #DEF1FF;
+    .home-icon {
+        width: 68px;
+        height: 68px;
+        background-color: #FFFFFF;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .img {
+            height: 35px;
+        }
+    }
+}
+
+// Section capablities 
+.sec-capablity::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/img/home/icon-bg-2.png);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: rotate(5deg);
+    z-index: 0;
+  }
+
+.sec-capablity {
+    overflow: hidden;
+    .container {
+        z-index: 1;
+    }
+    .capablity-card {
+        .capablity-count {
+            font-size: 36px;
+            line-height: 49px;
+        }
+        .capablity-count::before {
+            content: '';
+            width: 40px;
+            height: 1px;
+            background-color: var(--sp-color-tertiary);
+            position: absolute;
+            bottom: -2px;
+            left: 0px;
+        }
+
+    }
+}

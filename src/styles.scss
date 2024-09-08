@@ -52,7 +52,7 @@ a {
 // Color Customization
 
 .sp-primary {
-    color: var(--sp-color-primar) !important;
+    color: var(--sp-color-primary) !important;
 }
 
 .sp-secondary {
@@ -143,7 +143,11 @@ a {
 }
 
 .fs-20 {
-    font-size: 18px;
+    font-size: 20px;
+}
+
+.fs-24 {
+    font-size: 24px;
 }
 
 .heading-lg {
@@ -155,6 +159,7 @@ a {
 .heading-md {
     font-size: 40px;
     line-height: 49px;
+    font-weight: 500;
 }
 
 .sp-text {
@@ -167,4 +172,18 @@ a {
     color: #FFFFFF;
     font-size: 16px;
     line-height: 23px;
+}
+
+@media(max-width: 768px) {
+    .heading-md {
+        font-size: 24px;
+        line-height: 26.49px;
+    }
+    .sp-text-light {
+        font-size: 14px;
+    }
+    .heading-lg {
+        font-size: 24px;
+        line-height: 26.49px;
+    }
 }
