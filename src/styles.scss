@@ -150,6 +150,10 @@ a {
     font-size: 24px;
 }
 
+.fs-36 {
+    font-size: 24px;
+}
+
 .heading-lg {
     font-size: 48px;
     line-height: 56.39px;
@@ -185,5 +189,15 @@ a {
     .heading-lg {
         font-size: 24px;
         line-height: 26.49px;
+    }
+}
+
+.heading-width {
+    width: 50%;
+}
+
+@media(max-width: 998px) {
+    .heading-width {
+        width: 100%;
     }
 }
